@@ -71,7 +71,7 @@ const LoginCard = () => {
         )}
 
         <div className="dont-have-account">
-          <span>Don't have an account? <a href="/auth/signup">Sign up</a></span>
+           <span>Don&apos;t have an account? <a href="/auth/signup">Sign up</a></span>
         </div>
       </form>
     </div>
