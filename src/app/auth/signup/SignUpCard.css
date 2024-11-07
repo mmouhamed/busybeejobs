@@ -1,0 +1,117 @@
+/* SignUpCard.css */
+.sign-up-card {
+  max-width: 400px;
+  padding: 40px;
+  border-radius: 15px;
+  background-color: #f9f9f9; /* Light background */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Softer, larger shadow */
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sign-up-card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Slightly darker shadow on hover */
+}
+
+.sign-up-card h2 {
+  margin-bottom: 30px;
+  color: #333; /* Darker text color */
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.sign-up-card .title {
+  font-size: 2rem;
+  color: #6a11cb; /* Main title color */
+  margin-bottom: 20px;
+}
+
+.sign-up-card label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.sign-up-card input {
+  width: calc(100% - 20px);
+  margin-bottom: 20px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #f7f7f7; /* Slightly lighter input background */
+  color: #333;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease;
+}
+
+.sign-up-card input:focus {
+  border-color: #6a11cb; /* Border color change on focus */
+  outline: none;
+}
+
+.sign-up-card button {
+  padding: 10px 25px;
+  background: #222;
+  width: 95%;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.sign-up-card button:hover {
+  background: #333; /* Darker gradient on hover */
+}
+
+button:disabled, button:disabled:hover {
+  background: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.message {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.success {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  background-color: #d4edda; /* Light green background for success */
+  color: #155724; /* Dark green text */
+  border: 1px solid #c3e6cb; /* Green border */
+}
+
+.error {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  background-color: #f8d7da; /* Light red background for error */
+  color: #721c24; /* Dark red text */
+  border: 1px solid #f5c6cb; /* Red border */
+}
+
+.already-have-account {
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+
+.already-have-account a {
+  color: rgb(188, 185, 0);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.already-have-account a:hover {
+  text-decoration: underline;
+}

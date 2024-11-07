@@ -1,0 +1,70 @@
+// schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url = env("POSTGRES_PRISMA_URL") // uses connection pooling
+  directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
+}
+
+enum UserRole {
+  ADMIN
+  USER
+  SUPERVISOR
+}
+
+model User {
+  id            String          @id @default(cuid())
+  name          String?
+  email         String          @unique
+  emailVerified DateTime?
+  image         String?
+  password      String?
+  role          UserRole        @default(USER)
+  accounts      Account[]
+  applications  Application[]   @relation("UserApplications") 
+}
+
+model Account {
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+ 
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+ 
+  @@id([provider, providerAccountId])
+}
+
+model Application {
+  id                 Int          @id @default(autoincrement())
+  user               User         @relation(fields: [userId], references: [id], name: "UserApplications")
+  userId             String       @unique
+  personalInfo       Json
+  w4I9Info           Json
+  employmentHistory  Json
+  skills             Json
+  applicantQuestions Json
+  createdAt          DateTime     @default(now())
+  updatedAt          DateTime     @updatedAt
+  isComplete         Boolean      @default(false)
+  siteLocation       String? 
+  position           String?  
+  hireDate           DateTime? 
+  supervisorStatus   Boolean   @default(false)
+}
+
+model Admins {
+  id    Int    @id @default(autoincrement())
+  email String @unique
+}

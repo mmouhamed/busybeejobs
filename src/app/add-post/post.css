@@ -1,0 +1,46 @@
+/* PostForm.css */
+form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #222; /* Dark background for the form */
+  }
+  
+  label {
+    color: #ccc; /* Light color for labels */
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #555; /* Dark border for inputs */
+    background-color: #333; /* Dark input background */
+    color: #eee; /* Light text color */
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    color: #888; /* Slightly lighter placeholder color */
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  

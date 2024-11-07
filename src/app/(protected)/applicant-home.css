@@ -1,0 +1,77 @@
+/* Layout styles */
+.layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  /* Navbar styles for black and white theme */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+    background-color: #fff;
+  }
+
+  .navbar img {
+    width: 6rem;
+    padding: 10px;
+  }
+  
+  .navbar__logo h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #fff; /* White text for the logo */
+  }
+  
+  .navbar__signout {
+    background-color: #fff; /* White background for button */
+    color: #000; /* Black text for button */
+    border: 1px solid #000; /* Black border */
+    padding: 13px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbar__signout:hover {
+    background-color: #000; /* Black background on hover */
+    color: #fff; /* White text on hover */
+  }
+
+  .navbar_right {
+    display: flex;
+    gap: 40px;
+  }
+
+  .gradientBoxStyle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 175px;
+    padding: 16px;
+    overflow: auto;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #deddf8, #f8f7d3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+
+  .centeredText {
+    color: #333;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0;
+  }
+
+
+  .footer {
+    margin-top: 5%;
+    background-color: #f1f1f1; /* Light gray background */
+    padding: 40px 150px;
+    font-size: 15px;
+    color: #333;
+  }
+  

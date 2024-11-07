@@ -1,0 +1,27 @@
+/* Add this to your CSS file, such as styles.css or a CSS module */
+
+.dropdown-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    width: fit-content;
+  }
+  
+  .icon {
+    margin-right: 8px;
+    font-size: 18px; /* Adjust icon size if needed */
+    padding-left: 5px;
+  }
+  
+  .dropdown {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: sans-serif;
+    background: transparent;
+    cursor: pointer;
+  }
+  

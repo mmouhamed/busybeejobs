@@ -1,0 +1,65 @@
+
+  
+  .centeredText {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .admin-portal {
+    padding: 50px;
+    margin-top: 30px;
+  }
+  
+  .applications-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .applications-table th,
+  .applications-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .applications-table th {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  .applicant-link {
+    color: #1a73e8;
+    text-decoration: none;
+  }
+  
+  .applicant-link:hover {
+    text-decoration: underline;
+  }
+  
+  .loading-text {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .access-denied {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .sort-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding-left: 15px;
+  }
+  
+
+  h1 {
+    font-size: 1.5rem;
+  }
