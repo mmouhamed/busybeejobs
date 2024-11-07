@@ -7,6 +7,7 @@ import { handleSignOut } from "../../../actions/signOut";
 import { useRouter } from "next/navigation";
 import LanguageSelector from "../components/LanguageSelector";
 import { useTranslations } from "next-intl";
+import Image from 'next/image'; 
 
 const ApplicantHomeLayout = ({ children }) => {
   const t = useTranslations('ApplicantHome');
@@ -27,7 +28,16 @@ const Navbar = () => {
   return (
     <nav className="navbar">
         <div className="navbar__logo"> 
-            <a href="applicant-home"><img src={logo.src} alt={t('logoAlt')} className="navbar__logo" /></a>
+            <a href="applicant-home">
+                <Image 
+                  src={logo.src} 
+                  alt={t('logoAlt')} 
+                  className="navbar__logo" 
+                  width={200}  // You should provide a reasonable width
+                  height={50}  // And height for better optimization
+                  priority={true} // Use priority for the main logo to load faster
+                />
+            </a>
         </div>
         <div className="navbar_right">
             <LanguageSelector />
